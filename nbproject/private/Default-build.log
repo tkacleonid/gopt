@@ -1,0 +1,31 @@
+mkdir -p obj
+mkdir -p bin
+g++ -std=c++14 -Wall -O3 -Iinclude -I/ -I/snowgoose -I/COMPI -I/OPTITEST -I/NUC -fopenmp -c src/main.cpp -o obj/main.o
+g++ -std=c++14 -Wall -O3 -Iinclude -I/ -I/snowgoose -I/COMPI -I/OPTITEST -I/NUC -fopenmp -c src/CPUGlobalOptimization.cpp -o obj/CPUGlobalOptimization.o
+src/CPUGlobalOptimization.cpp: In function ‘void fnGetOptValueOnCPU(double*, int, int, double, double, void (*)(double*, int, double*), double*, double*, double*, int*)’:
+src/CPUGlobalOptimization.cpp:259:10: warning: variable ‘t_start_split_all’ set but not used [-Wunused-but-set-variable]
+  clock_t t_start_split_all, t_end_split_all;
+          ^~~~~~~~~~~~~~~~~
+src/CPUGlobalOptimization.cpp:259:29: warning: variable ‘t_end_split_all’ set but not used [-Wunused-but-set-variable]
+  clock_t t_start_split_all, t_end_split_all;
+                             ^~~~~~~~~~~~~~~
+src/CPUGlobalOptimization.cpp:260:10: warning: variable ‘t_start_split_sort’ set but not used [-Wunused-but-set-variable]
+  clock_t t_start_split_sort, t_end_split_sort;
+          ^~~~~~~~~~~~~~~~~~
+src/CPUGlobalOptimization.cpp:260:30: warning: variable ‘t_end_split_sort’ set but not used [-Wunused-but-set-variable]
+  clock_t t_start_split_sort, t_end_split_sort;
+                              ^~~~~~~~~~~~~~~~
+src/CPUGlobalOptimization.cpp: In function ‘void fnGetOptValueOnCPUSort(double*, int, int, double, double, void (*)(double*, int, double*), double*, double*, double*, int*)’:
+src/CPUGlobalOptimization.cpp:476:10: warning: variable ‘t_start_split_all’ set but not used [-Wunused-but-set-variable]
+  clock_t t_start_split_all, t_end_split_all;
+          ^~~~~~~~~~~~~~~~~
+src/CPUGlobalOptimization.cpp:476:29: warning: variable ‘t_end_split_all’ set but not used [-Wunused-but-set-variable]
+  clock_t t_start_split_all, t_end_split_all;
+                             ^~~~~~~~~~~~~~~
+src/CPUGlobalOptimization.cpp:477:10: warning: variable ‘t_start_split_sort’ set but not used [-Wunused-but-set-variable]
+  clock_t t_start_split_sort, t_end_split_sort;
+          ^~~~~~~~~~~~~~~~~~
+src/CPUGlobalOptimization.cpp:477:30: warning: variable ‘t_end_split_sort’ set but not used [-Wunused-but-set-variable]
+  clock_t t_start_split_sort, t_end_split_sort;
+                              ^~~~~~~~~~~~~~~~
+g++  -O3 -fopenmp -o bin/PROG obj/main.o obj/CPUGlobalOptimization.o  -lm

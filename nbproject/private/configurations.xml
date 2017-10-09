@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="bin">
+      </df>
+      <df name="COMPI">
+        <in>funccnt.hpp</in>
+        <in>funcproj.hpp</in>
+        <in>funcscale.hpp</in>
+        <in>functor.hpp</in>
+        <in>mpproblem.hpp</in>
+        <in>mputils.hpp</in>
+        <in>solver.hpp</in>
+        <in>testfuncproj.cpp</in>
+        <in>testmp.cpp</in>
+      </df>
+      <df name="include">
+        <in>CPU_GO.h</in>
+        <in>boxes_sort.h</in>
+        <in>interval.h</in>
+        <in>test_func_own_impl.h</in>
+        <in>test_func_with_lib.h</in>
+      </df>
+      <df name="NUC">
+        <df name="applycut">
+          <df name="basic">
+            <in>serialcutapp.hpp</in>
+            <in>testserialcutapp.cpp</in>
+          </df>
+          <df name="common">
+            <in>cutapplicator.hpp</in>
+          </df>
+        </df>
+        <df name="bags">
+          <in>bfsbag.hpp</in>
+          <in>idgen.hpp</in>
+          <in>sub.hpp</in>
+          <in>subbag.hpp</in>
+          <in>tstbfsbag.cpp</in>
+        </df>
+        <df name="cutfact">
+          <df name="common">
+            <in>cutfactory.hpp</in>
+            <in>recrepository.hpp</in>
+          </df>
+          <df name="compfact">
+            <in>compcutfact.hpp</in>
+            <in>tstcompcutfact.cpp</in>
+          </df>
+          <df name="lbcutfact">
+            <in>boundsupp.hpp</in>
+            <in>lbcutfactory.hpp</in>
+            <in>lpzbndsupp.hpp</in>
+            <in>recordsupp.hpp</in>
+            <in>testlbcutfactory.cpp</in>
+          </df>
+          <df name="lipfact">
+            <in>lipcutfact.hpp</in>
+            <in>lipsupp.hpp</in>
+            <in>testlipfact.cpp</in>
+          </df>
+          <df name="lipgradfact">
+            <in>lipgradfact.hpp</in>
+            <in>lpzgradsupp.hpp</in>
+            <in>testlipgradfact.cpp</in>
+          </df>
+          <df name="liphessfact">
+            <in>liphessfact.hpp</in>
+            <in>lpzhesssupp.hpp</in>
+            <in>testliphessfact.cpp</in>
+          </df>
+        </df>
+        <df name="cuts">
+          <in>cut.hpp</in>
+          <in>cuttypes.hpp</in>
+          <in>excludeballcut.hpp</in>
+          <in>savebox.hpp</in>
+          <in>testcutdef.cpp</in>
+          <in>totalcut.hpp</in>
+        </df>
+        <df name="decomp">
+          <in>bisectdecomp.hpp</in>
+          <in>decomp.hpp</in>
+          <in>tstbisectdecomp.cpp</in>
+        </df>
+        <df name="solver">
+          <in>basesolver.hpp</in>
+          <in>treewatchsolver.hpp</in>
+          <in>tstbasesolver.cpp</in>
+        </df>
+      </df>
+      <df name="obj">
+      </df>
+      <df name="OPTITEST">
+        <df name="descfunc">
+          <in>descfunc.hpp</in>
+          <in>json.hpp</in>
+          <in>keys.hpp</in>
+        </df>
+        <df name="oneobj">
+          <df name="contboxconstr">
+            <in>ackley1.hpp</in>
+            <in>alufpent.hpp</in>
+            <in>cosmixture.hpp</in>
+            <in>cubic.hpp</in>
+            <in>dejong.hpp</in>
+            <in>exprfunc.hpp</in>
+            <in>hyper.hpp</in>
+            <in>rosenbrock.hpp</in>
+            <in>testfunc.cpp</in>
+          </df>
+        </df>
+        <df name="testfuncs">
+          <in>testfuncs.hpp</in>
+        </df>
+      </df>
+      <df name="snowgoose">
+        <df name="box">
+          <in>box.hpp</in>
+          <in>boxutils.hpp</in>
+        </df>
+        <df name="common">
+          <in>fileutils.hpp</in>
+          <in>interval.hpp</in>
+          <in>projecttosimplex.hpp</in>
+          <in>sgerrcheck.hpp</in>
+          <in>smartptr.hpp</in>
+          <in>testprojecttosimplex.cpp</in>
+          <in>utilmacro.hpp</in>
+          <in>vec.hpp</in>
+        </df>
+        <df name="expression">
+          <in>algorithm.hpp</in>
+          <in>expr.hpp</in>
+          <in>node.hpp</in>
+          <in>testexpr.cpp</in>
+        </df>
+        <df name="interval">
+          <in>enums.h</in>
+          <in>interval_air.hpp</in>
+          <in>testinterval.cpp</in>
+        </df>
+        <df name="libjson">
+          <df name="_internal">
+            <df name="Dependencies">
+              <df name="libbase64++">
+                <in>._libbase64++.h</in>
+                <in>libbase64++.h</in>
+              </df>
+              <df name="mempool++">
+                <in>._mempool.h</in>
+                <in>mempool.h</in>
+              </df>
+            </df>
+            <df name="Source">
+              <df name="JSONDefs">
+                <in>._GNU_C.h</in>
+                <in>._Strings_Defs.h</in>
+                <in>._Unknown_C.h</in>
+                <in>._Visual_C.h</in>
+                <in>GNU_C.h</in>
+                <in>Strings_Defs.h</in>
+                <in>Unknown_C.h</in>
+                <in>Visual_C.h</in>
+              </df>
+              <in>._JSONAllocator.cpp</in>
+              <in>._JSONAllocator.h</in>
+              <in>._JSONChildren.cpp</in>
+              <in>._JSONChildren.h</in>
+              <in>._JSONDebug.cpp</in>
+              <in>._JSONDebug.h</in>
+              <in>._JSONDefs.h</in>
+              <in>._JSONGlobals.h</in>
+              <in>._JSONIterators.cpp</in>
+              <in>._JSONMemory.cpp</in>
+              <in>._JSONMemory.h</in>
+              <in>._JSONMemoryPool.h</in>
+              <in>._JSONNode.cpp</in>
+              <in>._JSONNode.h</in>
+              <in>._JSONNode_Mutex.cpp</in>
+              <in>._JSONPreparse.cpp</in>
+              <in>._JSONPreparse.h</in>
+              <in>._JSONSharedString.h</in>
+              <in>._JSONSingleton.h</in>
+              <in>._JSONStats.h</in>
+              <in>._JSONStream.cpp</in>
+              <in>._JSONStream.h</in>
+              <in>._JSONValidator.h</in>
+              <in>._JSONWorker.cpp</in>
+              <in>._JSONWorker.h</in>
+              <in>._JSONWriter.cpp</in>
+              <in>._JSON_Base64.h</in>
+              <in>._NumberToString.h</in>
+              <in>._internalJSONNode.cpp</in>
+              <in>._internalJSONNode.h</in>
+              <in>._libjson.cpp</in>
+              <in>JSONAllocator.cpp</in>
+              <in>JSONAllocator.h</in>
+              <in>JSONChildren.cpp</in>
+              <in>JSONChildren.h</in>
+              <in>JSONDebug.cpp</in>
+              <in>JSONDebug.h</in>
+              <in>JSONDefs.h</in>
+              <in>JSONGlobals.h</in>
+              <in>JSONIterators.cpp</in>
+              <in>JSONMemory.cpp</in>
+              <in>JSONMemory.h</in>
+              <in>JSONMemoryPool.h</in>
+              <in>JSONNode.cpp</in>
+              <in>JSONNode.h</in>
+              <in>JSONNode_Mutex.cpp</in>
+              <in>JSONPreparse.cpp</in>
+              <in>JSONPreparse.h</in>
+              <in>JSONSharedString.h</in>
+              <in>JSONSingleton.h</in>
+              <in>JSONStats.h</in>
+              <in>JSONStream.cpp</in>
+              <in>JSONStream.h</in>
+              <in>JSONValidator.cpp</in>
+              <in>JSONValidator.h</in>
+              <in>JSONWorker.cpp</in>
+              <in>JSONWorker.h</in>
+              <in>JSONWriter.cpp</in>
+              <in>JSON_Base64.h</in>
+              <in>NumberToString.h</in>
+              <in>internalJSONNode.cpp</in>
+              <in>internalJSONNode.h</in>
+              <in>libjson.cpp</in>
+            </df>
+            <df name="TestSuite">
+              <df name="All">
+                <in>main.cpp</in>
+              </df>
+              <df name="Benchmark">
+                <in>main.cpp</in>
+              </df>
+              <df name="TestSuite.xcodeproj">
+                <df name="project.xcworkspace">
+                  <df name="xcuserdata">
+                    <df name="wallace.xcuserdatad">
+                    </df>
+                  </df>
+                </df>
+                <df name="xcuserdata">
+                  <df name="wallace.xcuserdatad">
+                    <df name="xcdebugger">
+                    </df>
+                    <df name="xcschemes">
+                    </df>
+                  </df>
+                </df>
+              </df>
+              <in>RunTestSuite2.cpp</in>
+              <in>RunTestSuite2.h</in>
+              <in>StringTest.h</in>
+              <in>TestAssign.cpp</in>
+              <in>TestBinary.cpp</in>
+              <in>TestChildren.cpp</in>
+              <in>TestComments.cpp</in>
+              <in>TestConverters.cpp</in>
+              <in>TestCtors.cpp</in>
+              <in>TestEquality.cpp</in>
+              <in>TestFunctions.cpp</in>
+              <in>TestInequality.cpp</in>
+              <in>TestInspectors.cpp</in>
+              <in>TestIterators.cpp</in>
+              <in>TestMutex.cpp</in>
+              <in>TestNamespace.cpp</in>
+              <in>TestRefCounting.cpp</in>
+              <in>TestSharedString.cpp</in>
+              <in>TestStreams.cpp</in>
+              <in>TestString.cpp</in>
+              <in>TestSuite.cpp</in>
+              <in>TestSuite.h</in>
+              <in>TestValidator.cpp</in>
+              <in>TestWriter.cpp</in>
+              <in>UStringTest.h</in>
+              <in>UnitTest.cpp</in>
+              <in>UnitTest.h</in>
+              <in>main.cpp</in>
+            </df>
+            <df name="TestSuite2">
+              <df name="JSON_Base64">
+                <in>json_decode64.cpp</in>
+                <in>json_decode64.h</in>
+                <in>json_encode64.cpp</in>
+                <in>json_encode64.h</in>
+              </df>
+              <df name="JSONDebug">
+                <in>JSON_ASSERT.cpp</in>
+                <in>JSON_ASSERT.h</in>
+                <in>JSON_ASSERT_SAFE.cpp</in>
+                <in>JSON_ASSERT_SAFE.h</in>
+                <in>JSON_FAIL.cpp</in>
+                <in>JSON_FAIL.h</in>
+                <in>JSON_FAIL_SAFE.cpp</in>
+                <in>JSON_FAIL_SAFE.h</in>
+              </df>
+              <df name="JSONGlobals">
+                <in>jsonSingleton.cpp</in>
+                <in>jsonSingleton.h</in>
+              </df>
+              <df name="JSONValidator">
+                <df name="Resources">
+                  <in>validyMacros.h</in>
+                </df>
+                <in>isValidArray.cpp</in>
+                <in>isValidArray.h</in>
+                <in>isValidMember.cpp</in>
+                <in>isValidMember.h</in>
+                <in>isValidNamedObject.cpp</in>
+                <in>isValidNamedObject.h</in>
+                <in>isValidNumber.cpp</in>
+                <in>isValidNumber.h</in>
+                <in>isValidObject.cpp</in>
+                <in>isValidObject.h</in>
+                <in>isValidPartialRoot.cpp</in>
+                <in>isValidPartialRoot.h</in>
+                <in>isValidRoot.cpp</in>
+                <in>isValidRoot.h</in>
+                <in>isValidString.cpp</in>
+                <in>isValidString.h</in>
+                <in>securityTest.cpp</in>
+                <in>securityTest.h</in>
+              </df>
+              <df name="NumberToString">
+                <in>_areFloatsEqual.cpp</in>
+                <in>_areFloatsEqual.h</in>
+                <in>_atof.cpp</in>
+                <in>_atof.h</in>
+                <in>_ftoa.cpp</in>
+                <in>_ftoa.h</in>
+                <in>_itoa.cpp</in>
+                <in>_itoa.h</in>
+                <in>_uitoa.cpp</in>
+                <in>_uitoa.h</in>
+                <in>getLenSize.cpp</in>
+                <in>getLenSize.h</in>
+                <in>isNumeric.cpp</in>
+                <in>isNumeric.h</in>
+              </df>
+              <in>BaseTest.h</in>
+            </df>
+          </df>
+          <df name="Getting Started">
+            <df name="C++ Interface">
+            </df>
+            <df name="Library Interface">
+              <df name="scripts">
+              </df>
+              <df name="styles">
+              </df>
+            </df>
+          </df>
+          <in>._JSONOptions.h</in>
+          <in>JSONOptions.h</in>
+          <in>libjson.h</in>
+        </df>
+        <df name="pointgen">
+          <in>pointgenerator.hpp</in>
+          <in>randpointgen.hpp</in>
+          <in>testrandpointgen.cpp</in>
+        </df>
+      </df>
+      <df name="src">
+        <in>CPU_GO_DFS.cpp</in>
+        <in>CPU_GO_FULL_SPLIT.cpp</in>
+        <in>CPU_GO_FULL_SPLIT_00.cpp</in>
+        <in>CPU_GO_FULL_SPLIT_OMP.cpp</in>
+        <in>boxes_sort.cpp</in>
+        <in>main.cpp</in>
+      </df>
+      <df name="unittests">
+        <df name="gtest">
+          <df name="build-aux">
+          </df>
+          <df name="cmake">
+          </df>
+          <df name="codegear">
+            <in>gtest_all.cc</in>
+            <in>gtest_link.cc</in>
+          </df>
+          <df name="docs">
+          </df>
+          <df name="include">
+            <df name="gtest">
+              <df name="internal">
+                <df name="custom">
+                  <in>gtest-port.h</in>
+                  <in>gtest-printers.h</in>
+                  <in>gtest.h</in>
+                </df>
+                <in>gtest-death-test-internal.h</in>
+                <in>gtest-filepath.h</in>
+                <in>gtest-internal.h</in>
+                <in>gtest-linked_ptr.h</in>
+                <in>gtest-param-util-generated.h</in>
+                <in>gtest-param-util.h</in>
+                <in>gtest-port-arch.h</in>
+                <in>gtest-port.h</in>
+                <in>gtest-string.h</in>
+                <in>gtest-tuple.h</in>
+                <in>gtest-type-util.h</in>
+              </df>
+              <in>gtest-death-test.h</in>
+              <in>gtest-message.h</in>
+              <in>gtest-param-test.h</in>
+              <in>gtest-printers.h</in>
+              <in>gtest-spi.h</in>
+              <in>gtest-test-part.h</in>
+              <in>gtest-typed-test.h</in>
+              <in>gtest.h</in>
+              <in>gtest_pred_impl.h</in>
+              <in>gtest_prod.h</in>
+            </df>
+          </df>
+          <df name="lib">
+          </df>
+          <df name="m4">
+          </df>
+          <df name="msvc">
+          </df>
+          <df name="samples">
+            <in>prime_tables.h</in>
+            <in>sample1.cc</in>
+            <in>sample1.h</in>
+            <in>sample10_unittest.cc</in>
+            <in>sample1_unittest.cc</in>
+            <in>sample2.cc</in>
+            <in>sample2.h</in>
+            <in>sample2_unittest.cc</in>
+            <in>sample3-inl.h</in>
+            <in>sample3_unittest.cc</in>
+            <in>sample4.cc</in>
+            <in>sample4.h</in>
+            <in>sample4_unittest.cc</in>
+            <in>sample5_unittest.cc</in>
+            <in>sample6_unittest.cc</in>
+            <in>sample7_unittest.cc</in>
+            <in>sample8_unittest.cc</in>
+            <in>sample9_unittest.cc</in>
+          </df>
+          <df name="scripts">
+            <df name="test">
+            </df>
+          </df>
+          <df name="src">
+            <in>gtest-all.cc</in>
+            <in>gtest-death-test.cc</in>
+            <in>gtest-filepath.cc</in>
+            <in>gtest-internal-inl.h</in>
+            <in>gtest-port.cc</in>
+            <in>gtest-printers.cc</in>
+            <in>gtest-test-part.cc</in>
+            <in>gtest-typed-test.cc</in>
+            <in>gtest.cc</in>
+            <in>gtest_main.cc</in>
+          </df>
+          <df name="test">
+            <in>gtest-death-test_ex_test.cc</in>
+            <in>gtest-death-test_test.cc</in>
+            <in>gtest-filepath_test.cc</in>
+            <in>gtest-linked_ptr_test.cc</in>
+            <in>gtest-listener_test.cc</in>
+            <in>gtest-message_test.cc</in>
+            <in>gtest-options_test.cc</in>
+            <in>gtest-param-test2_test.cc</in>
+            <in>gtest-param-test_test.cc</in>
+            <in>gtest-param-test_test.h</in>
+            <in>gtest-port_test.cc</in>
+            <in>gtest-printers_test.cc</in>
+            <in>gtest-test-part_test.cc</in>
+            <in>gtest-tuple_test.cc</in>
+            <in>gtest-typed-test2_test.cc</in>
+            <in>gtest-typed-test_test.cc</in>
+            <in>gtest-typed-test_test.h</in>
+            <in>gtest-unittest-api_test.cc</in>
+            <in>gtest_all_test.cc</in>
+            <in>gtest_break_on_failure_unittest_.cc</in>
+            <in>gtest_catch_exceptions_test_.cc</in>
+            <in>gtest_color_test_.cc</in>
+            <in>gtest_env_var_test_.cc</in>
+            <in>gtest_environment_test.cc</in>
+            <in>gtest_filter_unittest_.cc</in>
+            <in>gtest_help_test_.cc</in>
+            <in>gtest_list_tests_unittest_.cc</in>
+            <in>gtest_main_unittest.cc</in>
+            <in>gtest_no_test_unittest.cc</in>
+            <in>gtest_output_test_.cc</in>
+            <in>gtest_pred_impl_unittest.cc</in>
+            <in>gtest_premature_exit_test.cc</in>
+            <in>gtest_prod_test.cc</in>
+            <in>gtest_repeat_test.cc</in>
+            <in>gtest_shuffle_test_.cc</in>
+            <in>gtest_sole_header_test.cc</in>
+            <in>gtest_stress_test.cc</in>
+            <in>gtest_throw_on_failure_ex_test.cc</in>
+            <in>gtest_throw_on_failure_test_.cc</in>
+            <in>gtest_uninitialized_test_.cc</in>
+            <in>gtest_unittest.cc</in>
+            <in>gtest_xml_outfile1_test_.cc</in>
+            <in>gtest_xml_outfile2_test_.cc</in>
+            <in>gtest_xml_output_unittest_.cc</in>
+            <in>production.cc</in>
+            <in>production.h</in>
+          </df>
+          <df name="xcode">
+            <df name="Config">
+            </df>
+            <df name="gtest.xcodeproj">
+            </df>
+            <df name="Resources">
+            </df>
+            <df name="Samples">
+              <df name="FrameworkSample">
+                <df name="WidgetFramework.xcodeproj">
+                </df>
+                <in>widget.cc</in>
+                <in>widget.h</in>
+                <in>widget_test.cc</in>
+              </df>
+            </df>
+            <df name="Scripts">
+            </df>
+          </df>
+        </df>
+        <df name="testfuncs">
+          <in>utestfuncs.cpp</in>
+          <in>utestfuncs.hpp</in>
+        </df>
+        <df name="testglobopt">
+          <in>exprbndsupp.hpp</in>
+          <in>utestglobopt.cpp</in>
+          <in>utestglobopt.hpp</in>
+        </df>
+        <df name="testintervals">
+          <in>utestinterval.cpp</in>
+          <in>utestinterval.hpp</in>
+        </df>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

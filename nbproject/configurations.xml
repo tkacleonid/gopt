@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="gtest"
+                   displayName="gtest"
+                   projectFiles="true"
+                   root="../unittests/gtest/include/gtest">
+      <logicalFolder name="internal" displayName="internal" projectFiles="true">
+        <itemPath>../unittests/gtest/include/gtest/internal/gtest-death-test-internal.h</itemPath>
+        <itemPath>../unittests/gtest/include/gtest/internal/gtest-filepath.h</itemPath>
+        <itemPath>../unittests/gtest/include/gtest/internal/gtest-internal.h</itemPath>
+        <itemPath>../unittests/gtest/include/gtest/internal/gtest-linked_ptr.h</itemPath>
+        <itemPath>../unittests/gtest/include/gtest/internal/gtest-param-util.h</itemPath>
+        <itemPath>../unittests/gtest/include/gtest/internal/gtest-port.h</itemPath>
+        <itemPath>../unittests/gtest/include/gtest/internal/gtest-string.h</itemPath>
+      </logicalFolder>
+      <itemPath>../unittests/gtest/include/gtest/gtest-death-test.h</itemPath>
+      <itemPath>../unittests/gtest/include/gtest/gtest-message.h</itemPath>
+      <itemPath>../unittests/gtest/include/gtest/gtest-printers.h</itemPath>
+      <itemPath>../unittests/gtest/include/gtest/gtest-spi.h</itemPath>
+      <itemPath>../unittests/gtest/include/gtest/gtest-test-part.h</itemPath>
+      <itemPath>../unittests/gtest/include/gtest/gtest.h</itemPath>
+    </logicalFolder>
+    <df root="." name="0">
+      <df name="src">
+        <in>CPU_GO_DFS.cpp</in>
+        <in>CPU_GO_FULL_SPLIT.cpp</in>
+        <in>CPU_GO_FULL_SPLIT_00.cpp</in>
+        <in>CPU_GO_FULL_SPLIT_OMP.cpp</in>
+        <in>boxes_sort.cpp</in>
+        <in>main.cpp</in>
+      </df>
+    </df>
+    <logicalFolder name="src"
+                   displayName="src"
+                   projectFiles="true"
+                   root="../unittests/gtest/src">
+      <itemPath>../unittests/gtest/src/gtest-all.cc</itemPath>
+      <itemPath>../unittests/gtest/src/gtest-death-test.cc</itemPath>
+      <itemPath>../unittests/gtest/src/gtest-filepath.cc</itemPath>
+      <itemPath>../unittests/gtest/src/gtest-internal-inl.h</itemPath>
+      <itemPath>../unittests/gtest/src/gtest-port.cc</itemPath>
+      <itemPath>../unittests/gtest/src/gtest-printers.cc</itemPath>
+      <itemPath>../unittests/gtest/src/gtest-test-part.cc</itemPath>
+      <itemPath>../unittests/gtest/src/gtest-typed-test.cc</itemPath>
+      <itemPath>../unittests/gtest/src/gtest.cc</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0"
+                 commonFlags="-mtune=generic -march=x86-64 -fstack-protector"/>
+        <element flagsID="1" commonFlags="-std=c++14 -O3 -fopenmp"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>bin/PROG</executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="../unittests/gtest/src/gtest-all.cc"
+            ex="false"
+            tool="1"
+            flavor2="11">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="../unittests/gtest/src/gtest-death-test.cc"
+            ex="true"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../unittests/gtest/src/gtest-filepath.cc"
+            ex="true"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../unittests/gtest/src/gtest-port.cc"
+            ex="true"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../unittests/gtest/src/gtest-printers.cc"
+            ex="true"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../unittests/gtest/src/gtest-test-part.cc"
+            ex="true"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../unittests/gtest/src/gtest-typed-test.cc"
+            ex="true"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../unittests/gtest/src/gtest.cc" ex="true" tool="3" flavor2="0">
+      </item>
+      <folder path="0">
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>..</pElem>
+            <pElem>snowgoose</pElem>
+            <pElem>COMPI</pElem>
+            <pElem>OPTITEST</pElem>
+            <pElem>NUC</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="src">
+        <ccTool>
+          <incDir>
+            <pElem>../unittests/gtest/include/gtest/internal</pElem>
+            <pElem>../unittests/gtest/include/gtest</pElem>
+            <pElem>../unittests/gtest/src</pElem>
+            <pElem>../unittests/gtest/include</pElem>
+            <pElem>../unittests/gtest</pElem>
+            <pElem>../unittests/gtest/lib</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="src/CPU_GO_DFS.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="src/CPU_GO_FULL_SPLIT.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="src/CPU_GO_FULL_SPLIT_00.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="src/CPU_GO_FULL_SPLIT_OMP.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="src/boxes_sort.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
